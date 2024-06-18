@@ -1,0 +1,19 @@
+Time : 17:10:46
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'c.asal_sekolah ASC' at line 1
+Raw SQL : SELECT c.asal_sekolah, count(c.kode_reg) as jumlah FROM camaba c LEFT JOIN gelombang g ON c.gelombang = g.id_gelombang WHERE c.asal_sekolah!=''  AND g.tahun=2024 AND c.status=1 GROUP BY c.asal_sekolah ORDER BY jumlah DESC c.asal_sekolah ASC
+
+Time : 11:01:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pmb.t_setting' doesn't exist
+Raw SQL : SELECT option_value FROM t_setting WHERE option_name='no_wa_support'
+
+Time : 11:00:30
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pmb.t_setting' doesn't exist
+Raw SQL : SELECT option_value FROM t_setting WHERE option_name='no_wa_support'
+
+Time : 11:00:18
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pmb.t_setting' doesn't exist
+Raw SQL : SELECT option_value FROM t_setting WHERE option_name='no_wa_support'
+
+Time : 11:00:02
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pmb.t_setting' doesn't exist
+Raw SQL : SELECT option_value FROM t_setting WHERE option_name='no_wa_support'

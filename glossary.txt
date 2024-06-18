@@ -1,0 +1,13 @@
+step 1 = pembayaran
+step 2 = akun
+step 3 = biodata
+step 4 = ujian
+step 5 = diterima
+step 6 = berkas
+
+if(ujian=='ada' && ujian=='lulus'){
+	step5
+} elseif(ujian=='ada' && ujian=='tidak lulus'){
+	step4
+	
+}

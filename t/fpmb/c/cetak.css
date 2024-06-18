@@ -1,0 +1,279 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  background: #eee;
+}
+:root{--mc:#3da4db}
+a {
+    color: var(--mc);
+}
+
+#c {
+  width: 360px;
+  margin: 30px auto;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#c img {
+  max-width: 100%;
+}
+#c form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#c h1 {
+  font-size: 18px;
+  margin: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+#c form input[type="text"],#c form input[type="password"] {
+  border: 1px solid #ddd;
+  font-family: inherit;
+  font-size: 15px;
+  padding: 8px 10px;
+  margin: 0 0 5px;
+  line-height: 1;
+  border-radius: 3px;
+}
+#c form button {
+  background: var(--mc);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+#p {
+  width: 500px;
+  margin: 30px auto 15px;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+}
+.h {
+  display: grid;
+  grid-template-columns: 50px auto;
+  gap: 10px;
+  border-bottom: 2px solid #000;
+  margin: 0 0 10px;
+}
+.hl img {
+  width: 100%;
+}
+.hr {
+  line-height: 1;
+}
+.hr h1 {
+  font-size: 20px;
+  margin: 0 0 5px;
+  font-weight: 500;
+}
+.hr h2 {
+  font-size: 22px;
+  margin: 0 0 5px;
+}
+.hr h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.i {
+  display: block;
+  border-bottom: 2px solid #000;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+}
+.i h3 {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+.i table {
+  width: 100%;
+  box-sizing: border-box;
+}
+.i td:first-child {
+  width: 130px;
+}
+.i td {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.j li {
+  font-size: 14px;
+  font-weight: 400;
+  list-style: decimal;
+  margin: 0 0 0 15px;
+}
+.j ol {
+  width: 80%;
+  float: left;
+}
+.j img {
+  width: 80px;
+  float: right;
+}
+.j {
+  display: block;
+  overflow: hidden;
+}
+.q {
+  width: 500px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.q button {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.qc {
+  background: #2b8bf0;
+}
+.qs {
+  background: #32bf63;
+}
+.qb {
+  background: #ff7a05;
+}
+@media screen and (max-width:600px){
+
+}
+@media screen and (max-width:540px){
+
+}
+
+@media screen and (max-width:500px){
+#p,.q {
+  width: 95%;
+}
+body {
+  background: #fff;
+}
+}
+@media screen and (max-width:480px){
+
+}
+@media screen and (max-width:414px){
+
+}
+@media screen and (max-width:384px){
+#c {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  padding: 50px 20px 0;
+}
+.hr h1 {
+  font-size: 16px;
+}
+.hr h2 {
+  font-size: 18px;
+}
+.hr h3 {
+  font-size: 16px;
+}
+.h {
+  grid-template-columns: 40px auto;
+}
+#p {
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 15px;
+  border: none;
+}
+.i h3 {
+  font-size: 16px;
+}
+.i td {
+  font-size: 14px;
+}
+.i td:first-child {
+  font-weight: 500;
+  width: 100px;
+}
+.j h3 {
+  font-size: 16px;
+}
+.j ol {
+  width: 100%;
+  float: none;
+}
+}
+@media screen and (max-width:360px){
+
+}
+@media screen and (max-width:320px){
+
+}
+
+@media print {
+.q {
+    display: none;
+}
+@page { margin: 0; }
+#p {
+    margin: 20px;
+}
+}

@@ -1,0 +1,27 @@
+Time : 10:45:26
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND (kode_reg='' OR wa='08123456781')' at line 1
+Raw SQL : SELECT * FROM camaba WHERE gelombang= AND (kode_reg='' OR wa='08123456781')
+
+Time : 10:39:56
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'I'' at line 1
+Raw SQL : SELECT c.tgl_daftar,c.kode_reg,c.nama,c.asal_sekolah, c.wa, g.gelombang, g.tahun, g.biaya_daftar, 0.5*g.biaya_daftar AS komisi FROM camaba c LEFT JOIN gelombang g ON c.gelombang=g.id_gelombang WHERE c.reff='NYOMA NOKA RIFA'I'
+
+Time : 10:39:13
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'I'' at line 1
+Raw SQL : SELECT c.tgl_daftar,c.kode_reg,c.nama,c.asal_sekolah, c.wa, g.gelombang, g.tahun, g.biaya_daftar, 0.5*g.biaya_daftar AS komisi FROM camaba c LEFT JOIN gelombang g ON c.gelombang=g.id_gelombang WHERE c.reff='NYOMA NOKA RIFA'I'
+
+Time : 10:37:37
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'I' AND g.tahun=2024' at line 1
+Raw SQL : SELECT c.tgl_daftar,c.kode_reg,c.nama,c.asal_sekolah, c.wa, g.gelombang, g.tahun, g.biaya_daftar, 0.5*g.biaya_daftar AS komisi FROM camaba c LEFT JOIN gelombang g ON c.gelombang=g.id_gelombang WHERE c.reff='NYOMA NOKA RIFA'I' AND g.tahun=2024
+
+Time : 10:37:21
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'I' AND g.tahun='2024'' at line 1
+Raw SQL : SELECT c.tgl_daftar,c.kode_reg,c.nama,c.asal_sekolah, c.wa, g.gelombang, g.tahun, g.biaya_daftar, 0.5*g.biaya_daftar AS komisi FROM camaba c LEFT JOIN gelombang g ON c.gelombang=g.id_gelombang WHERE c.reff='NYOMA NOKA RIFA'I' AND g.tahun='2024'
+
+Time : 10:37:20
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'I' AND g.tahun='2024'' at line 1
+Raw SQL : SELECT c.tgl_daftar,c.kode_reg,c.nama,c.asal_sekolah, c.wa, g.gelombang, g.tahun, g.biaya_daftar, 0.5*g.biaya_daftar AS komisi FROM camaba c LEFT JOIN gelombang g ON c.gelombang=g.id_gelombang WHERE c.reff='NYOMA NOKA RIFA'I' AND g.tahun='2024'
+
+Time : 10:36:45
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'I' AND g.tahun='2024/2025'' at line 1
+Raw SQL : SELECT c.tgl_daftar,c.kode_reg,c.nama,c.asal_sekolah, c.wa, g.gelombang, g.tahun, g.biaya_daftar, 0.5*g.biaya_daftar AS komisi FROM camaba c LEFT JOIN gelombang g ON c.gelombang=g.id_gelombang WHERE c.reff='NYOMA NOKA RIFA'I' AND g.tahun='2024/2025'

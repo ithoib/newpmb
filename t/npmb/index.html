@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New PMB</title>
+	<link rel="stylesheet" type="text/css" href="a/c.css?t=111111">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="a">
+	<div id="l">
+		<div class="lo">
+			 <a href="https://pmb.itmnganjuk.ac.id/akun/dasbor">
+			 	<img src="https://pmb.itmnganjuk.ac.id/t/pmb/c/logo-itm.png">
+			 	<strong>PMB</strong>
+			 	<span>2024/2025</span>
+			 </a>
+		</div>
+		<div class="lm">
+			<ul>
+			   <li><a href="index.html" class="lk"><i class="fas fa-home"></i> <em>Beranda</em></a></li>
+			   <li><a href="blank.html"><i class="fas fa-route"></i> <em>Blank</em></a></li>
+			   <li><a href="blank-container.html"><i class="fas fa-user-alt-slash"></i> <em>Blank Container</em> <span>0</span></a></li>
+			   <li><a id="lh"><i class="fas fa-chevron-circle-left"></i> <em>Sembunyikan</em></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="r">
+		<div id="m">
+			<h1><i class="fas fa-graduation-cap"></i> P<span>enerimaan </span>M<span>ahasiswa </span>B<span>aru</span> 2024/2025</h1>
+			<div class="rm">
+				<a href="#" class="sm">Hi, Imam Thoib</a>
+				<button id="am">☰</button>
+			</div>
+		</div>
+		<div id="c">
+			<div class="ct">
+				<h2><i class="fas fa-route"></i> Jalur Pendaftaran</h2>
+				<a href="#tambah" class="cj" rel="modal:open">Tambah <i class="fas fa-plus"></i></a>
+			</div>
+			<a href="#edit2023" class="cbe" rel="modal:open"><i class="fas fa-pencil-alt"></i></a>
+			<a href="#hapus2023" class="cbh" rel="modal:open"><i class="fas fa-trash-alt"></i></a>
+			<a href="#edit2024" class="cbe" rel="modal:open"><i class="fas fa-pencil-alt"></i></a>
+			<a href="#hapus2024" class="cbh" rel="modal:open"><i class="fas fa-trash-alt"></i></a>
+			<div id="tambah" class="modal"><div class="modal-content"><div class="modal-header"><a href="#" class="close" rel="modal:close">×</a><h2>Tambah Tahun Akademik</h2></div><div class="modal-body"><form method="post" action=""><label for="tahun">Tahun</label><input id="tahun" type="text" name="tambah[tahun]" placeholder="Tahun" required="" class="modal-text"><label for="tahun">Tahun Akademik</label><input id="tahun" type="text" name="tambah[tahun_akademik]" placeholder="Tahun Akademik" required="" class="modal-text"><label for="status">Status</label><select name="tambah[status]" class="modal-select" required=""><option value="0">Tidak Aktif</option><option value="1">Aktif</option></select><button type="submit" class="modal-button">Tambah <i class="fas fa-plus"></i></button></form></div></div></div>
+			<div id="hapus2023" class="modal"><div class="modal-content"><div class="modal-header"><a href="#" class="close" rel="modal:close">×</a><h2>Hapus Tahun Akademik</h2></div><div class="modal-body"><p>Apa Anda yakin akan menghapus?</p><form method="post" action=""><input type="hidden" name="hapus[tahun]" value="2023"><div class="cbu"><a href="#" rel="modal:close"><i class="fas fa-undo-alt"></i> Tidak</a><button type="submit" class="ya"><i class="fas fa-trash-alt"></i> Ya</button></div></form></div></div></div>
+			<div id="edit2023" class="modal"><div class="modal-content"><div class="modal-header"><a href="#" class="close" rel="modal:close">×</a><h2>Ubah Tahun Akademik</h2></div><div class="modal-body"><form method="post" action=""><input type="hidden" name="ubah[tahun]" value="2023"><label for="tahun_akademik">Tahun Akademik</label><input id="tahun_akademik" type="text" name="ubah[tahun_akademik]" placeholder="tahun_akademik" required="" class="modal-text" value="2023/2024"><label for="status">Status</label><select name="ubah[status]" class="modal-select" required=""><option value="0" selected="">Tidak Aktif</option><option value="1">Aktif</option></select><button type="submit" class="modal-button"><i class="fas fa-pencil-alt"></i> Ubah</button></form></div></div></div>
+			<div id="hapus2024" class="modal"><div class="modal-content"><div class="modal-header"><a href="#" class="close" rel="modal:close">×</a><h2>Hapus Tahun Akademik</h2></div><div class="modal-body"><p>Apa Anda yakin akan menghapus?</p><form method="post" action=""><input type="hidden" name="hapus[tahun]" value="2024"><div class="cbu"><a href="#" rel="modal:close"><i class="fas fa-undo-alt"></i> Tidak</a><button type="submit" class="ya"><i class="fas fa-trash-alt"></i> Ya</button></div></form></div></div></div>
+			<div id="edit2024" class="modal"><div class="modal-content"><div class="modal-header"><a href="#" class="close" rel="modal:close">×</a><h2>Ubah Tahun Akademik</h2></div><div class="modal-body"><form method="post" action=""><input type="hidden" name="ubah[tahun]" value="2024"><label for="tahun_akademik">Tahun Akademik</label><input id="tahun_akademik" type="text" name="ubah[tahun_akademik]" placeholder="tahun_akademik" required="" class="modal-text" value="2024/2025"><label for="status">Status</label><select name="ubah[status]" class="modal-select" required=""><option value="0">Tidak Aktif</option><option value="1" selected="">Aktif</option></select><button type="submit" class="modal-button"><i class="fas fa-pencil-alt"></i> Ubah</button></form></div></div></div>
+		</div>
+		<div id="f">&copy; Institut Teknologi Mojosari 2023. Made with ♥ by <a href="https://ithoib.blogspot.com">ithoib</a>.</div>
+	</div>
+</div>
+<script src="a/menu.js"></script>
+<script src="a/modal.js"></script>
+</body>
+</html>
