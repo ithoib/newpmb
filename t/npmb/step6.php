@@ -80,6 +80,7 @@ echo
   		'</div>'.
   		'<div class="peng-g">'.
 			'<p>Informasi terkait pembayaran daftar ulang akan diinformasikan menyusul melalui grup WA PMB Tahun '.$th_pmb.'. Pastikan Anda sudah bergabung dengan grup WA di sini: <a href="https://chat.whatsapp.com/HN8J4BfanlDBTRJ4IWgFnk">https://chat.whatsapp.com/HN8J4BfanlDBTRJ4IWgFnk</a>.</p>'.
+			
 			// '<p><strong>B.</strong> Bagi calon mahasiswa yang lulus ujian seleksi masuk dengan program <strong>KIP-K</strong> diwajibkan untuk daftar ulang dengan segera melengkapi berkas pendaftaran ( NB: bebas biaya pendidikan setelah dinyatakan lolos Beasiswa KIP-K, pengumuman lolos Beasiswa KIP-K menyusul)</p>'.
 			// '<p><strong>C.</strong> Bagi calon mahasiswa yang lulus ujian masuk dengan program <strong>REGULER</strong> diwajibkan untuk daftar ulang dengan rincian sbb.</p>'.
 			// '<ul>'.
