@@ -1,0 +1,7 @@
+Time : 06:52:37
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+Raw SQL : SELECT * FROM pertanyaan WHERE id_pertanyaan=
+
+Time : 06:49:05
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'ithoib@gmail.com' for key 'email'
+Raw SQL : update camaba set  kode_reg='ITM20241000137' ,  nama='MAS FULAN' ,  nik='1234' ,  nisn='1234' ,  prodi='SI' ,  jalur='REG' ,  jenis_kelamin='L' ,  agama='Islam' ,  tempat_lahir='KEDIRI' ,  tgl_lahir='2024-06-11' ,  wa='087858716651' ,  email='ithoib@gmail.com' ,  asal_sekolah='SMKN 1 KEDIRI' ,  thn_lulus='2024' ,  provinsi='35' ,  kabupaten_kota='3518' ,  kecamatan='351804' ,  kode_pos='64471' ,  alamat='Jl. Merapi V Dsn. Jajar RT 03 RW 03 Ds. Sukorejo Kec. Loceret' ,  nama_ayah='SUMIDJAN' ,  nik_ayah='3518031102620001' ,  tgl_lahir_ayah='2024-07-05' ,  pendidikan_ayah='SMP' ,  pekerjaan_ayah='BURUH TANI' ,  penghasilan_ayah='1200000' ,  no_hp_ayah='087858716651' ,  nama_ibu='SITI MAISAROH' ,  nik_ibu='3518035111740001' ,  tgl_lahir_ibu='2024-06-28' ,  pendidikan_ibu='SMP' ,  pekerjaan_ibu='BURUH TANI' ,  penghasilan_ibu='120000' ,  no_hp_ibu='087858716651' ,  nama_wali=NULL ,  tgl_lahir_wali=NULL ,  pendidikan_wali=NULL ,  pekerjaan_wali=NULL ,  penghasilan_wali=NULL ,  no_hp_wali=NULL ,  proyeksi='Wirausaha' ,  sumber_info='Brosur' ,  kode_akses_kip=NULL ,  no_kip=NULL WHERE kode_reg='ITM20241000137'

@@ -4,6 +4,7 @@ $num = 10;
 if($page>$num || @$t_URL[3]==1){
 	header('Location: '.ADMIN_URL.'/ujian');	
 } else {
+	$cek 			= $db->row("SELECT * FROM ujian WHERE kode_reg='$kode_reg' ORDER BY id DESC LIMIT 1");
 	$iu 			= $cek['id'];
 	$prtnyn 		= array_chunk(explode(',',$cek['soal']),5);
 	$qstn 			= $prtnyn[$page-1];

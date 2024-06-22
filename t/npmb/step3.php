@@ -1,4 +1,25 @@
 <?php 
+$cek = $db->row("SELECT * FROM ujian WHERE kode_reg='$kode_reg' ORDER BY id DESC LIMIT 1");
+if(!empty($cek)){
+	$batas = $cek['batas_waktu'];
+	$status = $cek['status'];
+	$jam_ini = date('Y-m-d H:i:s');
+	if($jam_ini<=$batas && $status==0){
+		# waktu ujian masih ada dan belum selesai;
+		$posisi = 1;
+	} elseif($jam_ini<=$batas && $status==1){
+		# waktu ujian masih ada dan sudah selesai;
+		$posisi = 2;
+	} elseif($jam_ini>$batas && $status==0){
+		# waktu ujian habis dan belum selesai;
+		$posisi = 3;
+	} elseif($jam_ini>$batas && $status==1){
+		# waktu ujian habis dan sudah selesai;
+		$posisi = 4;
+	}
+} else {
+	$posisi = 5;
+}
 if(isset($_POST['goto'])){
 	$prtnyn = $db->query("SELECT id_pertanyaan FROM pertanyaan WHERE id_soal IN (SELECT id_soal FROM soal WHERE status=1)");
 	$prtnyn2 = array_column((array)$prtnyn,'id_pertanyaan');
@@ -8,6 +29,14 @@ if(isset($_POST['goto'])){
 	$soal = $pqs;
 	step3($kode_reg,$soal);
 }
+
+if($posisi==1){
+	header('Location: '.ADMIN_URL.'/ujian');
+} elseif($posisi==2 || $posisi==3 || $posisi==4){
+	$db->query("UPDATE progress SET ujian=1 WHERE kode_reg='$kode_reg'");
+	echo '<meta http-equiv="refresh" content="0">';
+} elseif($posisi==5){
+
 echo
 '<div id="c">'.
 '<div class="ct">'.
@@ -29,4 +58,5 @@ echo
 	'<button type="submit" class="cj">Ujian Masuk ITM Online <i class="fas fa-angle-double-right"></i></button>'.
 '</form>'.
 '</div>';
+}
 ?>

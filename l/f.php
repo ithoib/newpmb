@@ -696,7 +696,7 @@ if($cbjg['prodi']=='SI'){
   $map = get_option('map_pti');
 }
 $berkas = '- '.implode(PHP_EOL.'- ', $brks);
-$text = "Mohon maaf! Kamu dinyatakan TIDAK LULUS Ujian Masuk ITM Tahun $th_aktif. Kamu bisa mencoba lagi pada tanggal ".indotime(date('Y-m-d', strtotime($tgluj." + 1 day")))."*.";
+$text = "Mohon maaf! Kamu dinyatakan TIDAK LULUS Ujian Masuk ITM Tahun $th_aktif. Kamu bisa mencoba lagi pada tanggal *".indotime(date('Y-m-d', strtotime($tgluj." + 1 day")))."*.";
 $postfield = [
 	'recipient_type' => 'individual',
 	'to' => $wa,
@@ -985,7 +985,7 @@ function tambah_camaba($args,$next_id,$s_name){
 		$q4 				= $db->insert('progress',$args3);
 
 		$db->executeTransaction();
-		kirim_step1($args['wa'],$kode_reg,$upass);
+		kirim_step1($args['wa'],$args['kode_reg'],$upass);
 		writeLog($args['kode_reg'].' berhasil ditambahkan','pendaftar',$args['kode_reg'],$s_name);
 		header('Location: '.ADMIN_URL.'/pendaftar?w=tambah&m=ok');
 
@@ -1055,6 +1055,7 @@ function step3($kode_reg,$soal){
 			'batas_waktu' => $batas
 	);
 	$q1 		= $db->insert('ujian',$args);
+	$q2 		= $db->query("UPDATE progress SET ujian=0 WHERE kode_reg='$kode_reg'");
 	writeLog($kode_reg.' memulai ujian','ujian',$kode_reg,$kode_reg);
 	header('Location: '.ADMIN_URL.'/ujian');	
 }

@@ -200,6 +200,7 @@ body {
   padding: 20px;
   min-height: calc(100vh - 91px - 56px);
   border-radius: 3px;
+  overflow: hidden;
 }
 #c p,#u p {
   font-size: 15px;

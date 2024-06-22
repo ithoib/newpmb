@@ -7,7 +7,7 @@ if($q!=''){
 	if(!empty($q1)){
 		$data = array();
 		foreach($q1 as $item){
-			$data[] = array("id"=>$item['sekolah'], "text"=>strtoupper($item['sekolah']));
+			$data[] = array("id"=>strtoupper(strtolower($item['sekolah'])), "text"=>strtoupper(strtolower($item['sekolah'])));
 		}
 		echo json_encode($data);
 	}

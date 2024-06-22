@@ -14,6 +14,7 @@ echo
 '<div id="c">';
 if($cek['status']==1){
 	$next_try = date('Y-m-d', strtotime($cek['waktu_ujian']." + 1 day"));
+	// $next_try = $today;
 	echo  
 	'<div class="ct">'.
 		'<h2>Halo '.$s_name.'!</h2>'.

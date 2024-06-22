@@ -80,13 +80,13 @@ echo
 			'<thead>'.
 				'<tr>'.
 					'<th>No.</th>'.
-					'<th>Tgl Daftar</th>'.
 					'<th>Nama</th>'.
 					'<th>L/P</th>'.
 					'<th style="width:170px">Asal Sekolah</th>'.
 					'<th>Prodi</th>'.
 					'<th>Jalur</th>'.
 					'<th>Gel</th>'.
+					'<th>Tgl Daftar</th>'.
 					'<th style="width:180px" class="notexport">Aksi</th>'.
 				'</tr>'.
 			'</thead>'.
@@ -117,13 +117,13 @@ echo
 
 			echo '<tr>'.
 					'<td><a href="'.$cn.'/profil/'.$mhs['kode_reg'].'">'.$mhs['kode_reg'].'</a></td>'.
-					'<td>'.$mhs['tgl_daftar'].'</td>'.
 					'<td>'.$mhs['nama'].'</td>'.
 					'<td>'.$mhs['jenis_kelamin'].'</td>'.
 					'<td>'.$mhs['asal_sekolah'].'</td>'.
 					'<td>'.$mhs['prodi'].'</td>'.
 					'<td>'.$mhs['jalur'].'</td>'.
 					'<td>'.str_replace('Gelombang ','',$mhs['gelombang']).'</td>'.
+					'<td>'.$mhs['tgl_daftar'].'</td>'.
 					'<td style="font-size:14px;"><a href="#progress'.$mhs['kode_reg'].'" class="cbe" rel="modal:open"><i class="fas fa-pencil-alt"></i></a> <a href="#hapus'.$mhs['kode_reg'].'" class="cbh" rel="modal:open"><i class="fas fa-trash-alt"></i></a> <a href="#gelombang'.$mhs['kode_reg'].'" class="cbe" rel="modal:open" title="Pindah Gelombang"><i class="fas fa-exchange-alt"></i></a> <a href="#bukti'.$mhs['kode_reg'].'" class="cbb" rel="modal:open"><i class="fas fa-eye"></i></a> <a href="https://api.whatsapp.com/send?phone='.to62($mhs['wa']).'&text='.urlencode($pesan).'" class="cbw" title="Follow Up" target="_blank"><i class="fab fa-whatsapp"></i></a></td>'.
 				'</tr>';
 					$modal .=
