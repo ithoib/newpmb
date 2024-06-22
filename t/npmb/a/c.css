@@ -1324,16 +1324,17 @@ input[type="file"]::file-selector-button {
 }
 .form-group label {
   font-weight: 400;
+  font-size: 14px;
 }
 .option-text {
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 14px;
 }
 .option-button {
   display: inline-block;
-  margin: 30px 0 0;
+  margin: 15px 0 0;
   background: var(--mc);
   color: #fff;
   cursor: pointer;
