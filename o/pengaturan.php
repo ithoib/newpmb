@@ -16,6 +16,10 @@ if(!isset($_SESSION['log'])){
 			ubah_pengaturan($k,$v);
 		}
 	}
+	if(isset($_POST['tambah'])){
+		$tambah = $_POST['tambah'];
+		tambah_pengaturan($tambah,$s_name);
+	}
 	include THEME_DIR.'/pengaturan.php';
 }
 ?>

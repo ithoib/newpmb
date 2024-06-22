@@ -202,6 +202,19 @@ function get_user_session($user){
 	return array('nama'=>$r2['nama'],'role'=>$role);
 }
 
+function tambah_pengaturan($args,$s_name){
+	$db 	= new Db();
+	$cek 	= $db->row("SELECT * FROM pengaturan WHERE option_name='{$args['option_name']}'");
+	if($cek==0){
+		$q1 = $db->insert('pengaturan',$args);
+		writeLog('Pengaturan '.$args['option_name'].' berhasil ditambahkan','pengaturan',$args['option_name'],$s_name);
+		header('Location: '.ADMIN_URL.'/pengaturan?w=tambah&m=ok');
+	} else {
+		header('Location: '.ADMIN_URL.'/pengaturan?w=tambah&m=ada');
+	}
+	
+}
+
 function tambah_jalur($args,$s_name){
 	$db 	= new Db();
 	$cek 	= $db->row("SELECT * FROM jalur WHERE kode_jalur='{$args['kode_jalur']}'");
